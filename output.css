@@ -1839,6 +1839,9 @@
   .p-\[50vh\] {
     padding: 50vh;
   }
+  .px-0 {
+    padding-inline: calc(var(--spacing) * 0);
+  }
   .px-1\.5 {
     padding-inline: calc(var(--spacing) * 1.5);
   }
@@ -2608,6 +2611,16 @@
   .focus\:ring-pink-500 {
     &:focus {
       --tw-ring-color: var(--color-pink-500);
+    }
+  }
+  .md\:px-0 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:px-\[6vh\] {
+    @media (width >= 48rem) {
+      padding-inline: 6vh;
     }
   }
 }

@@ -11,12 +11,39 @@
 <body class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 text-white h-screen flex items-center justify-center">
 
     <main>
-        <div class="border-2 border-black bg-amber-400 pt-[4vh] pb-4 px-[6vh] rounded-3xl bg-gradient-to-b from-blue-900 via-blue-700 to-blue-500 shadow-2xl">
+        <div class="border-2 border-black bg-amber-400 pt-[4vh] pb-4 px-10 rounded-3xl bg-gradient-to-b from-blue-900 via-blue-700 to-blue-500 shadow-2xl">
             <div class="flex mb-1">
-                <input class="text-pink-700 h-14 w-[25vw] px-5 text-xl rounded-2xl outline-none" placeholder="Enter your city name..." type="search" name="" id="">
-                <div class="flex justify-center items-center ml-3 h-14 w-14 bg-white rounded-2xl"><i class="text-black fa-solid fa-magnifying-glass"></i></div>
+                <input id="search_input" class="text-pink-700 h-14 w-[25vw] px-5 text-xl rounded-2xl outline-none" placeholder="Enter your city name..." type="search" name="" id="">
+                <div id="search_icon" class="flex justify-center items-center ml-3 h-14 w-14 bg-white rounded-2xl"><i class="text-black fa-solid fa-magnifying-glass"></i></div>
             </div>
-            
+            <div id="weather_report" class="">
+                <div class="flex justify-center">
+                    <div id="sunny" class="h-42 w-42"><img src="Images/sunny.png" alt="sunny"></div>
+                    <div id="cloudy_rain" class="h-42 w-42 hidden"><img src="Images/cloudy_rain.png" alt="cloudy"></div>
+                    <div id="cloudy" class="h-42 w-42 hidden"><img src="Images/cloudy.png" alt="cloudy"></div>
+                </div>
+                <div class="flex justify-center flex-col items-center">
+                    <h1 id="temperature" class="text-3xl">22°C</h1>
+                    <h1 id="city_name" class="text-3xl ">New York</h1>
+                </div>
+                <div class="flex justify-between mt-7">
+                    <div class="flex">
+                        <div class="h-10 mr-3 w-10"><img src="Images/humidity.png" alt=""></div>
+                        <div>
+                            <div id="humidity" class="mb-[-5px]">19 %</div>
+                            <div>Humidity</div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="h-10 mr-3 w-10"><img src="Images/wind speed.webp" alt=""></div>
+                        <div>
+                            <div id="wind_speed" class="mb-[-5px]">4.12 Km/h</div>
+                            <div>Wind Speed</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </main>
 
